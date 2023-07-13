@@ -13,9 +13,13 @@ function StartExperience({ onStart }) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: 'rgba(0, 0, 0, 0.5)' // semi-transparent background
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', // semi-transparent background
     }}>
-      <button onClick={onStart}>Start Experience</button>
+      <div className='box-start'>
+        <p className='text-start'>MINDFULNESS IMMERSIVE XPERIENCE WEB</p>
+        <button className='button-start' onClick={onStart}>Start Experience</button>
+        <p className='text-by'>Demo By Alkimera XR</p>
+      </div>
     </div>
   );
 }

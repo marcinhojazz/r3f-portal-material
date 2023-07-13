@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
 #root {
   width: 100vw;
   height: 100vh;
@@ -5,6 +7,7 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins';
 }
 
 #group-buttons {
@@ -20,9 +23,10 @@ body {
 
 button {
   padding: 8px;
+  font-size: 1rem;
   font-weight: bold;
   border-radius: 50px; /* Rounded corners */
-  width: 150px; /* Set a specific width */
+  width: 196px; /* Set a specific width */
   height: 50px; /* Set a specific height */
   text-align: center; /* Center the text */
   background: hsla(276, 98%, 50%, 0.225);
@@ -30,9 +34,35 @@ button {
   box-shadow: 0 0 10px #9ecaed;
   color: #fff;
   transition: all 0.3s ease;
+  text-transform: uppercase;
 }
 
 button:hover {
   background: rgba(0, 0, 0, 0.497);
   box-shadow: 0 0 20px #9ecaed, 0 0 30px #9ecaed, 0 0 40px #9ecaed;
+}
+
+.box-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.text-start {
+  font-weight: bold;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.button-start {
+  width: 260px;
+  font-size: 1.25rem;
+}
+
+.text-by {
+  font-weight: 200;
+  font-size: 1.75rem;
 }

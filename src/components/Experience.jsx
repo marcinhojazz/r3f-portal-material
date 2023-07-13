@@ -17,9 +17,8 @@ export const Experience = ({ activeTexture }) => {
       <ambientLight intensity={0.10} />
       <Environment preset="sunset" />
       <OrbitControls
-        enablePan={true}
       />
-      <mesh position={[0, 0, 0]}>
+      <mesh position={[0, 0, 0]} ref={meshRef} rotation={[0, -4, 0]}>
         <sphereGeometry args={[10, 64, 64]} />
         <meshStandardMaterial map={map[activeTexture]} side={THREE.BackSide} />
       </mesh>
