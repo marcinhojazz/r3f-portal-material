@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Canvas shadows camera={{ position: [0, 1.7, 0], fov: 75 }}>
+      <Canvas shadows camera={{ fov: 75, position: [0, 0, 5] }} >
         <color attach="background" args={["#ececec"]} />
         <Experience activeTexture={activeTexture} />
       </Canvas>
