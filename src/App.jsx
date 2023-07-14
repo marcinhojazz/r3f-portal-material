@@ -19,9 +19,6 @@ function StartExperience({ onStart }) {
         <p className='text-start'>MINDFULNESS IMMERSIVE XPERIENCE WEB</p>
         <button className='button-start' onClick={onStart}>Start Experience</button>
         <p className='text-by'>Demo By Alkimera XR</p>
-        <a href="https://api.whatsapp.com/send/?phone=5521993233208&text&type=phone_number&app_absent=0">
-          Fale Agora
-        </a>
       </div>
     </div>
   );
@@ -49,6 +46,9 @@ function App() {
         <button onClick={() => handleButtonClick(0)}>ambient 1</button>
         <button onClick={() => handleButtonClick(1)}>ambient 2</button>
         <button onClick={() => handleButtonClick(2)}>ambient 3</button>
+        <a className='link-wpp' href="https://api.whatsapp.com/send/?phone=5521993233208&text&type=phone_number&app_absent=0">
+          Fale Agora
+        </a>
       </div>
       {!experienceStarted && <StartExperience onStart={startExperience} />}
     </>
