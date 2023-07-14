@@ -69,4 +69,13 @@ button:hover {
 
 .link-wpp {
   color: #fff;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  text-shadow: 0 0 20px #9ecaed, 0 0 30px #9ecaed, 0 0 40px #9ecaed;
+}
+
+.link-wpp:hover {
+  text-shadow: 2px 4px 20px #3bfc00, 2px 4px 30px #3bfc00, 2px 4px 40px #3bfc00;
 }
